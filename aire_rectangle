@@ -1,0 +1,20 @@
+""" creation d'un script pour calculé l'air d'un rectangle"""
+
+"""Pour calculer l'air d'un rectangle , nous avons besoin de connaitres les mesures telle que la longueur , la largeur, """
+longueur=largeur=""
+
+while not (longueur.isdigit() and largeur.isdigit()):
+
+    longueur=input("Quelle est la longueur de votre rectangle ? :")
+    largeur=input("Quelle est la largeur de votre rectangle ")
+    if not (longueur.isdigit() and largeur.isdigit()):
+        print("Veuillez uniquement que des chiffres ")
+
+longueur=int(longueur)
+largeur=int(largeur)
+
+air_rectangle=longueur*largeur
+print(f"Pour calculer l'air d'un rectangle on fait longueur X largeur soit {longueur} X {largeur} ")
+
+print(f"L'air de votre rectangle de longueur {longueur} cm et de largeur {largeur} cm est de {air_rectangle} cm")
+        
